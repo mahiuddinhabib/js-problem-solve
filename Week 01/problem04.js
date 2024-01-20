@@ -6,7 +6,6 @@ const rl = readline.createInterface({
 });
 const prompt = () => new Promise((resolve) => rl.question("", resolve));
 
-// Usage inside aync function do not need closure demo only
 (async () => {
   try {
     const a = parseInt(await prompt());
